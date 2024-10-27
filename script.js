@@ -1,5 +1,6 @@
 var rows = prompt("Enter a number for rows");
 var body = document.querySelector("body");
+var div = document.createElement("div");
 var star = "";
 for (var j = 0; j <= rows; j++) {
     star += "&nbsp;";
@@ -10,7 +11,7 @@ var p = document.createElement("p");
 p.classList.add("yellow");
 p.innerHTML = star;
 p.style.margin = "0";
-body.appendChild(p);
+div.appendChild(p);
 
 for (var i = 0; i < rows; i++) {
     var str = "";
@@ -30,5 +31,6 @@ for (var i = 0; i < rows; i++) {
     p.classList.add("green");
     p.style.margin = "0";
     p.innerHTML = str;
-    body.appendChild(p);
+    div.appendChild(p);
 }
+body.appendChild(div);
