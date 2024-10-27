@@ -18,7 +18,7 @@ for (var i = 0; i < rows; i++) {
     for (var j = rows; j > i; j--) {
         str += "&nbsp;";
     }
-    str += "<span>*</span>";
+    str += "<span>*&nbsp;</span>";
     for (var k = 0; k <= i; k++) {
         str += "|";
     }
